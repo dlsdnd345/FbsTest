@@ -1,0 +1,19 @@
+// Example IDL file for our monster's schema.
+
+namespace WebView.EthersCommand;
+
+table BigInt {
+  value:string;
+}
+
+table GetBalanceInput {
+  id:int16;
+  provider_key:string;
+  address:string;
+}
+
+table GetBalanceOutput {
+  id:int16;
+  provider_key:string;
+  balance:BigInt;
+}
