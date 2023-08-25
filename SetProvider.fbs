@@ -1,18 +1,14 @@
-// Example IDL file for our monster's schema.
+include "./common.fbs";
 
 namespace WebView.EthersCommand;
 
-table BigInt {
-  value:string;
-}
-
-table GetBalanceInput {
+table SetProviderInput {
   id:int16;
   provider_key:string;
   address:string;
 }
 
-table GetBalanceOutput {
+table SetProviderOutput {
   id:int16;
   provider_key:string;
   balance:BigInt;
